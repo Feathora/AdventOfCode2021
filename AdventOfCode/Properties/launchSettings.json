@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AdventOfCode": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "cookie": "53616c7465645f5f8e1804b8b9fa70f555793415c491e0d926f3dc5491b177d2a9f5bb75cdbf90cfdd2679bf44e9e163"
+      }
+    }
+  }
+}
