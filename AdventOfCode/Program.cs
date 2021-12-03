@@ -24,7 +24,7 @@ client.DefaultRequestHeaders.Add("Cookie", $"session={Environment.GetEnvironment
 
 var response = await client.GetAsync($"2021/day/{currentDay}/input");
 var input = await response.Content.ReadAsStringAsync();
-var lines = input.Split('\n');
+var lines = input.Split('\n').Where(l => !string.IsNullOrEmpty(l)).ToArray();
 
 Console.WriteLine($"Puzzle 1: {day.CalculatePuzzle1(lines)}");
 Console.WriteLine($"Puzzle 2: {day.CalculatePuzzle2(lines)}");
