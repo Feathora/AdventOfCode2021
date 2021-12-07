@@ -68,7 +68,7 @@ namespace AdventOfCode
 		{
 			var cards = new List<Card>();
 
-			for (int i = 1; i < lines.Length; i += 5)
+			for (int i = 2; i < lines.Length; i += 5)
 			{
 				var card = new Card();
 				for (int y = 0; y < 5; ++y)
@@ -80,6 +80,8 @@ namespace AdventOfCode
 					}
 				}
 				cards.Add(card);
+
+				i += 1;
 			}
 
 			return cards;
